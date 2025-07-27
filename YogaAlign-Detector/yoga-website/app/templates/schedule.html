@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Class Schedule</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'base.html' %}
+    <div class="container">
+        <h1>Class Schedule</h1>
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Instructor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hatha Yoga</td>
+                    <td>Monday</td>
+                    <td>6:00 PM - 7:00 PM</td>
+                    <td>Jane Doe</td>
+                </tr>
+                <tr>
+                    <td>Vinyasa Flow</td>
+                    <td>Wednesday</td>
+                    <td>6:00 PM - 7:00 PM</td>
+                    <td>John Smith</td>
+                </tr>
+                <tr>
+                    <td>Yin Yoga</td>
+                    <td>Friday</td>
+                    <td>5:00 PM - 6:00 PM</td>
+                    <td>Emily Johnson</td>
+                </tr>
+                <tr>
+                    <td>Ashtanga Yoga</td>
+                    <td>Saturday</td>
+                    <td>10:00 AM - 11:30 AM</td>
+                    <td>Michael Brown</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

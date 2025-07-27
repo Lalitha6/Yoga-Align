@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Classes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'base.html' %}
+    <div class="container">
+        <h1>Our Yoga Classes</h1>
+        <div class="class-list">
+            <div class="class-item">
+                <h2>Hatha Yoga</h2>
+                <p>A gentle introduction to the most basic yoga postures.</p>
+                <p>Duration: 60 minutes</p>
+            </div>
+            <div class="class-item">
+                <h2>Vinyasa Yoga</h2>
+                <p>A dynamic flow of postures that are linked together with breath.</p>
+                <p>Duration: 75 minutes</p>
+            </div>
+            <div class="class-item">
+                <h2>Ashtanga Yoga</h2>
+                <p>A rigorous style of yoga that follows a specific sequence of postures.</p>
+                <p>Duration: 90 minutes</p>
+            </div>
+            <div class="class-item">
+                <h2>Yin Yoga</h2>
+                <p>A slow-paced style of yoga with postures held for longer periods.</p>
+                <p>Duration: 60 minutes</p>
+            </div>
+            <div class="class-item">
+                <h2>Restorative Yoga</h2>
+                <p>A relaxing style of yoga that uses props to support the body.</p>
+                <p>Duration: 60 minutes</p>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

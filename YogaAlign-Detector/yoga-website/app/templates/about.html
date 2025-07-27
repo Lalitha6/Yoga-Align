@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Yoga Studio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'base.html' %}
+    <div class="about-container">
+        <h1>About Our Yoga Studio</h1>
+        <p>Welcome to our yoga studio, where we believe in the power of yoga to transform lives. Our mission is to provide a serene and supportive environment for individuals of all levels to explore their practice.</p>
+        <h2>Our Philosophy</h2>
+        <p>We embrace the holistic approach of yoga, focusing on the mind, body, and spirit. Our classes are designed to promote physical strength, flexibility, and mental clarity.</p>
+        <h2>Meet Our Instructors</h2>
+        <p>Our team of certified instructors is passionate about sharing their knowledge and helping you achieve your personal goals. Each instructor brings their unique style and expertise to the classes.</p>
+        <h2>Join Us</h2>
+        <p>Whether you are a beginner or an experienced yogi, we invite you to join our community. Explore our class schedule and find the perfect class for you!</p>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
